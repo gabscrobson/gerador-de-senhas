@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <h1>Gerador de senhas</h1>
+
+        <!-- ------- RESULT ------- -->
+        <div id="result">
+
+            <p id="password"></p>
+            <img src="assets/copy-icon.svg" id="copy-icon">
+
+        </div>
+
+        <!-- ------- INPUTS ------- -->
+        <div id="inputs">
+
+            <div id="length">
+                <p>Quantidade de caracteres</p>
+                <p id="charLenght"></p>
+            </div>
+
+            <input type="range" min="1" max="30" value="15" id="range">
+
+            <div><input type="checkbox" id="upper" class="checkbox" checked><span id="checkboxText">Incluir letras maiúsculas</span></div>
+            <div><input type="checkbox" id="lower" class="checkbox" checked><span id="checkboxText">Incluir letras minúsculas</span></div>
+            <div><input type="checkbox" id="number" class="checkbox"><span id="checkboxText">Incluir números</span></div>
+            <div><input type="checkbox" id="symbol" class="checkbox"><span id="checkboxText">Incluir símbolos</span></div>
+
+            <div id="strength">
+                <p id="strengthText">FORÇA</p>
+                <div id="strengthLevel">
+                    <p id="strengthLevelText">MÉDIA</p>
+                    <div id="strengthRepContainer">
+                        <div class="strengthRep high medium low"></div>
+                        <div class="strengthRep high medium"></div>
+                        <div class="strengthRep high"></div>
+                    </div>
+                </div>
+            </div>
+
+            <button>GERAR →</button>
+
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
