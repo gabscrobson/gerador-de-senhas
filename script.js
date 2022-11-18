@@ -23,6 +23,8 @@ symbolEl.oninput = updateStrength
 
 buttonEl.addEventListener('click', generatePassword)
 
+clipboardEl.addEventListener('click', copyToClipboard)
+
 function updateCharacters() {
     characters = rangeEl.value
     charactersEl.textContent = characters
@@ -80,6 +82,10 @@ function getHas() {
     hasLower =  lowerEl.checked
     hasNumber = numberEl.checked
     hasSymbol = symbolEl.checked
+}
+
+function copyToClipboard() {
+    navigator.clipboard.writeText(passwordEl.textContent);
 }
 
 function getRandomLower() {

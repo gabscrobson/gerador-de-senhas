@@ -17,7 +17,7 @@
 
 body {
     background-color: var(--background);
-    height: 100vh;
+    height: 97vh;
     color: var(--letter);
     margin-top: 3vh;
 }
@@ -60,6 +60,7 @@ h1{
     font-size: 1.8em;
     width: calc(100% - 1.8em);
     overflow:hidden;
+    text-overflow: ellipsis;
 }
 
 #copy-icon {
